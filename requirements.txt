@@ -1,0 +1,4 @@
+pymupdf
+moviepy
+pillow
+imageio-ffmpeg

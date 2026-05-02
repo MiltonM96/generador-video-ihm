@@ -1,0 +1,3 @@
+file 'E:/generador-video-ihm/output/segments/scene_01.mp4'
+file 'E:/generador-video-ihm/output/segments/scene_02.mp4'
+file 'E:/generador-video-ihm/output/segments/scene_03.mp4'

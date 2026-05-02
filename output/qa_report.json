@@ -1,0 +1,15 @@
+{
+    "duracion_correcta": true,
+    "duracion_total": 12,
+    "cantidad_escenas": 3,
+    "comunica_una_sola_idea": true,
+    "usa_texto_en_video": false,
+    "usa_audio_en_video": false,
+    "evita_sobrecarga": true,
+    "estructura_atencional": [
+        "pulsión de muerte",
+        "estado neutro",
+        "pulsión de vida"
+    ],
+    "observacion": "El MVP genera un video visual sin texto ni audio, basado en una estructura de tres momentos: contaminación oceánica, pausa de observación e imagen de recuperación ambiental. El texto y el audio pueden incorporarse como capas posteriores."
+}

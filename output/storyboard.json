@@ -1,0 +1,53 @@
+{
+    "idea_principal": "La contaminación oceánica produce una sensación de colapso ambiental, pero la innovación sostenible puede abrir una posibilidad de recuperación.",
+    "publico_objetivo": "Usuarios con alta distractibilidad o dificultad para sostener la atención frente a contenidos digitales breves.",
+    "tema": "Contaminación oceánica y recuperación ambiental mediante soluciones sostenibles.",
+    "duracion_total": 12,
+    "formato": "9:16 vertical",
+    "escenas": [
+        {
+            "orden": 1,
+            "nombre": "Pulsión de muerte",
+            "duracion": 4,
+            "descripcion_visual": "Ola oscura de agua contaminada, cargada de botellas plásticas, redes rotas y residuos.",
+            "funcion_ihm": "Captar la atención mediante una imagen de urgencia ambiental, pérdida y amenaza.",
+            "conceptos": [
+                "atención selectiva",
+                "saliencia visual",
+                "novedad",
+                "contraste",
+                "emoción"
+            ],
+            "asset": "muerte.png"
+        },
+        {
+            "orden": 2,
+            "nombre": "Estado neutro",
+            "duracion": 4,
+            "descripcion_visual": "Laboratorio limpio y minimalista con un tanque de agua transparente y una posible solución biodegradable.",
+            "funcion_ihm": "Reducir la carga cognitiva luego del impacto inicial y generar una pausa perceptiva.",
+            "conceptos": [
+                "carga cognitiva",
+                "memoria de trabajo",
+                "jerarquía visual",
+                "reducción de fricción"
+            ],
+            "asset": "neutro.png"
+        },
+        {
+            "orden": 3,
+            "nombre": "Pulsión de vida",
+            "duracion": 4,
+            "descripcion_visual": "Manos sosteniendo un brote verde en una maceta biodegradable hecha con plástico reciclado, con una playa limpia de fondo.",
+            "funcion_ihm": "Presentar una solución visual positiva, asociada a la recuperación ambiental y la esperanza.",
+            "conceptos": [
+                "motivación",
+                "recompensa inmediata",
+                "emoción positiva",
+                "esperanza",
+                "renovación"
+            ],
+            "asset": "vida.png"
+        }
+    ]
+}
