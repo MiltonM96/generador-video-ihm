@@ -1,0 +1,7 @@
+file 'E:/generador-video-ihm/assets/0.mp4'
+file 'E:/generador-video-ihm/assets/1.mp4'
+file 'E:/generador-video-ihm/assets/2.mp4'
+file 'E:/generador-video-ihm/assets/3.mp4'
+file 'E:/generador-video-ihm/assets/4.mp4'
+file 'E:/generador-video-ihm/assets/5.mp4'
+file 'E:/generador-video-ihm/assets/6.mp4'

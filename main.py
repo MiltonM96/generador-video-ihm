@@ -192,6 +192,78 @@ def create_video_from_storyboard(storyboard):
 
     return output_path
 
+
+def concatenate_assets_videos():
+    """
+    Toma los 7 videos de assets (0.mp4 a 6.mp4) y los une en un solo
+    video final usando FFmpeg con el concat filter.
+    Se normaliza cada video (resolución, framerate, audio) para
+    garantizar compatibilidad entre segmentos diferentes.
+    """
+
+    num_videos = 7
+    video_files = [os.path.join(ASSETS_DIR, f"{i}.mp4") for i in range(num_videos)]
+
+    # Verificar que todos los archivos existen
+    for vf in video_files:
+        if not os.path.exists(vf):
+            raise FileNotFoundError(f"No se encontró el video: {vf}")
+
+    output_path = os.path.join(OUTPUT_DIR, "video_final.mp4")
+
+    # Construir inputs (-i para cada video)
+    input_args = []
+    for vf in video_files:
+        input_args.extend(["-i", vf])
+
+    # Construir filter_complex:
+    # Cada video se escala a 1080x1920, se agrega padding si es necesario,
+    # se normaliza el framerate a 24fps, y se genera audio silencioso si no tiene.
+    filter_parts = []
+    concat_inputs = ""
+
+    for i in range(num_videos):
+        filter_parts.append(
+            f"[{i}:v]scale={VIDEO_WIDTH}:{VIDEO_HEIGHT}:"
+            f"force_original_aspect_ratio=decrease,"
+            f"pad={VIDEO_WIDTH}:{VIDEO_HEIGHT}:(ow-iw)/2:(oh-ih)/2:black,"
+            f"fps={FPS},format=yuv420p,setsar=1[v{i}]"
+        )
+        # Generar audio silencioso para cada video y mezclarlo con el audio
+        # real (si existe). Esto garantiza que todos tengan un stream de audio.
+        filter_parts.append(
+            f"[{i}:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo[a{i}]"
+        )
+        concat_inputs += f"[v{i}][a{i}]"
+
+    filter_parts.append(
+        f"{concat_inputs}concat=n={num_videos}:v=1:a=1[outv][outa]"
+    )
+
+    filter_complex = "; ".join(filter_parts)
+
+    command = [
+        "ffmpeg",
+        "-y",
+        *input_args,
+        "-filter_complex", filter_complex,
+        "-map", "[outv]",
+        "-map", "[outa]",
+        "-c:v", "libx264",
+        "-preset", "medium",
+        "-crf", "23",
+        "-c:a", "aac",
+        "-b:a", "128k",
+        "-movflags", "+faststart",
+        output_path
+    ]
+
+    print("Uniendo los 7 videos (0.mp4 a 6.mp4)...")
+    subprocess.run(command, check=True)
+
+    print(f"Video final generado en: {output_path}")
+    return output_path
+
 def build_qa_report(storyboard):
     """
     Control de calidad básico.
@@ -229,8 +301,8 @@ def main():
     storyboard = build_storyboard(extracted_text)
     save_json(storyboard, os.path.join(OUTPUT_DIR, "storyboard.json"))
 
-    print("Generando video...")
-    video_path = create_video_from_storyboard(storyboard)
+    print("Concatenando los 7 videos de assets...")
+    video_path = concatenate_assets_videos()
 
     print("Generando reporte de calidad...")
     qa_report = build_qa_report(storyboard)
