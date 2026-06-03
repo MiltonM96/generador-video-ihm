@@ -1,0 +1,151 @@
+Trabajo Práctico IHM
+Diseño de un mínimo viable para generar un video breve atencional a partir de un PDF conceptual
+1. Introducción
+
+En Interfaz Hombre-Máquina, captar la atención del usuario no es un aspecto secundario, sino una condición necesaria para que el mensaje pueda ser percibido, comprendido y recordado. Actualmente, los usuarios interactúan con interfaces, videos y contenidos breves en contextos de mucha distracción, sobrecarga informativa y consumo rápido. Por eso, diseñar una pieza audiovisual breve implica tomar decisiones sobre percepción, emoción, contraste, saliencia visual y carga cognitiva.
+
+En este trabajo se propone el diseño de un mínimo viable para producir un video breve orientado a captar la atención del usuario, tomando como base un PDF conceptual. La propuesta no busca generar un video completo mediante un único prompt, sino construir un flujo por etapas: extracción del contenido del PDF, selección de una idea principal, organización narrativa en tres momentos, composición visual del video y control de calidad. Este enfoque coincide con la consigna del trabajo práctico, que solicita una solución por fases, con decisiones justificadas y criterios de evaluación.
+
+2. TDAH e Interfaz Hombre-Máquina
+
+El TDAH puede entenderse como una condición vinculada a dificultades en la regulación de la atención, la impulsividad, la espera y el sostenimiento del esfuerzo en tareas poco estimulantes. Desde la perspectiva de IHM, esto obliga a pensar diseños más claros, directos y visualmente organizados.
+
+Un contenido dirigido a usuarios con alta distractibilidad debe reducir la fricción, evitar la sobrecarga, presentar una sola idea principal y utilizar estímulos visuales capaces de orientar rápidamente la atención. Por eso, el video propuesto trabaja con una estructura breve y simple, donde cada escena cumple una función atencional específica.
+
+3. Problema de diseño
+
+El problema principal es cómo construir un video breve que logre llamar la atención del usuario sin caer en una estrategia manipuladora o puramente comercial. La propuesta busca usar recursos de impacto visual para comunicar una idea socialmente útil, evitando formatos asociados a publicidades agresivas, apuestas, casino virtual o consumo impulsivo.
+
+El video debe durar entre 8 y 15 segundos, comunicar una sola idea principal, evitar la sobrecarga de información y minimizar problemas de legibilidad u ortografía. Estos criterios forman parte de la consigna del trabajo práctico.
+
+4. Tema elegido para el video
+
+El tema elegido para esta primera versión del mínimo viable es:
+
+La organización de la información como ayuda para sostener la atención.
+
+La idea principal que se desea comunicar es:
+
+Cuando el entorno se ordena, la atención deja de pelear contra el caos.
+
+Este mensaje permite vincular el video con un problema social y cotidiano: la saturación de información, los estímulos excesivos y la dificultad para concentrarse en contextos desordenados. La propuesta puede aplicarse a ámbitos comunitarios como salud, educación, trámites, oficinas públicas o espacios de asistencia.
+
+5. Público objetivo
+
+El público objetivo está compuesto por usuarios con alta distractibilidad, especialmente personas que pueden sentirse sobrecargadas frente a interfaces, mensajes o entornos visuales con demasiados estímulos. También puede incluir usuarios que, sin tener diagnóstico de TDAH, experimentan fatiga cognitiva o dificultad para sostener la atención en entornos digitales.
+
+6. Objetivo del video
+
+El objetivo del video es captar rápidamente la atención del usuario y comunicar, de forma visual y breve, que el orden de la información puede reducir la sensación de caos y facilitar la comprensión.
+
+El video no incorpora texto ni audio en esta primera capa de generación, porque se considera que esos elementos pueden inyectarse luego en etapas posteriores de postproducción. De esta manera, el MVP se concentra en la estructura visual y narrativa.
+
+7. Estructura narrativa del video
+
+La estructura del video se organiza en tres momentos:
+
+| Momento           | Duración aproximada | Función                                         |
+| ----------------- | ------------------: | ----------------------------------------------- |
+| Pulsión de muerte |          4 segundos | Mostrar urgencia, caos, pérdida o saturación    |
+| Estado neutro     |          4 segundos | Bajar la intensidad visual y permitir una pausa |
+| Pulsión de vida   |          4 segundos | Presentar alivio, solución, orden o mejora      |
+
+La duración total estimada es de 12 segundos, por lo que se mantiene dentro del rango solicitado para el trabajo práctico.
+
+8. Justificación psicológica e IHM
+
+La primera escena, correspondiente a la pulsión de muerte, busca generar un impacto inicial. Puede mostrar una situación de urgencia, acumulación de papeles, notificaciones o desorden. Su función es activar la atención selectiva mediante saliencia visual, contraste, emoción y novedad.
+
+La segunda escena, correspondiente al estado neutro, funciona como una pausa perceptiva. Después del impacto inicial, se reduce la intensidad para evitar saturar al usuario. Esta etapa se relaciona con la reducción de carga cognitiva, la memoria de trabajo y la jerarquía visual.
+
+La tercera escena, correspondiente a la pulsión de vida, presenta una salida o solución. Puede mostrar orden, claridad, acompañamiento o alivio. Esta escena se vincula con la motivación, la recompensa inmediata y la emoción positiva. La estructura completa busca sostener la atención sin sobrecargar al usuario.
+
+9. Storyboard mínimo
+
+| Tiempo | Escena            | Descripción visual                                        | Conceptos aplicados                                                       |
+| ------ | ----------------- | --------------------------------------------------------- | ------------------------------------------------------------------------- |
+| 0–4 s  | Pulsión de muerte | Imagen de caos, urgencia, saturación o pérdida de control | Atención selectiva, saliencia visual, emoción, contraste                  |
+| 4–8 s  | Estado neutro     | Imagen más limpia, pausada y visualmente simple           | Reducción de carga cognitiva, memoria de trabajo, jerarquía visual        |
+| 8–12 s | Pulsión de vida   | Imagen de solución, orden, ayuda o alivio                 | Motivación, recompensa inmediata, emoción positiva, reducción de fricción |
+
+10. Ingeniería del mínimo viable
+
+El mínimo viable fue desarrollado con herramientas gratuitas y código propio en Python. El sistema no depende de una API paga ni de un modelo único que genere todo el video. En cambio, se construye un pipeline simple y controlable.
+
+El flujo general es el siguiente:
+
+PDF conceptual
+↓
+Extracción de texto
+↓
+Construcción de storyboard
+↓
+Selección de tres imágenes visuales
+↓
+Composición del video en formato vertical
+↓
+Exportación del MP4 final
+↓
+Generación de reporte de calidad
+
+Este enfoque se inspira en arquitecturas de generación por escenas, donde el video no se produce desde una única instrucción larga, sino mediante fragmentos más simples, controlables y evaluables. En el PDF de arquitectura de reels se plantea justamente dividir la producción en microescenas, controlar continuidad y unir el resultado final mediante herramientas como FFmpeg.
+
+11. Herramientas utilizadas
+
+Para el desarrollo del MVP se utilizaron las siguientes herramientas:
+
+| Herramienta | Uso en el proyecto                           |
+| ----------- | -------------------------------------------- |
+| Python      | Lenguaje principal del prototipo             |
+| PyMuPDF     | Extracción de texto desde el PDF conceptual  |
+| Pillow      | Manejo de imágenes                           |
+| MoviePy     | Composición del video                        |
+| FFmpeg      | Renderizado y exportación final del MP4      |
+| JSON        | Registro del storyboard y reporte de calidad |
+
+La elección de estas herramientas permite construir un prototipo gratuito, ejecutable localmente y fácil de subir a GitHub.
+
+12. Salidas generadas por el sistema
+
+El programa genera automáticamente los siguientes archivos:
+
+output/extracted_text.txt
+output/storyboard.json
+output/qa_report.json
+output/video_final.mp4
+
+El archivo extracted_text.txt contiene el texto extraído del PDF.
+El archivo storyboard.json guarda la estructura narrativa del video.
+El archivo qa_report.json registra criterios básicos de control de calidad.
+El archivo video_final.mp4 es el resultado audiovisual generado por el sistema.
+
+13. Control de calidad
+
+El control de calidad no se realiza solamente “a ojo”, sino mediante criterios definidos previamente. El trabajo práctico solicita revisar si el video comunica una sola idea, si la escena es clara, si el mensaje inicial llama la atención, si no hay saturación visual y si el contenido es apropiado.
+
+En esta versión del MVP se evalúan los siguientes criterios:
+
+| Criterio             | Resultado esperado                |
+| -------------------- | --------------------------------- |
+| Duración             | Entre 8 y 15 segundos             |
+| Cantidad de ideas    | Una idea principal                |
+| Saturación visual    | Baja o controlada                 |
+| Estructura narrativa | Tres momentos diferenciados       |
+| Texto en pantalla    | No incorporado en esta capa       |
+| Audio                | No incorporado en esta capa       |
+| Contenido            | Socialmente útil y no manipulador |
+
+14. Limitaciones del MVP
+
+Esta primera versión no genera video mediante IA generativa avanzada, sino que compone un video a partir de imágenes seleccionadas. Esto permite mantener el proyecto dentro de un alcance gratuito, ejecutable y controlable.
+
+Además, el video no incorpora texto ni audio, ya que estos elementos se consideran capas posteriores. Esta decisión evita problemas de legibilidad, errores ortográficos y competencia entre voz e imagen.
+
+Como mejora futura, el sistema podría incorporar modelos locales o APIs externas para generar imágenes, seleccionar automáticamente escenas según el contenido del PDF, agregar movimiento más complejo, incorporar subtítulos o producir variantes del mismo video para comparar cuál capta mejor la atención.
+
+15. Conclusión
+
+El proyecto propone un mínimo viable para generar un video breve orientado a captar la atención del usuario a partir de un PDF conceptual. La solución se organiza en fases y evita depender de un único prompt o de una única herramienta de IA. Esto permite mayor control sobre el resultado, facilita la evaluación y permite justificar cada decisión desde conceptos de Interfaz Hombre-Máquina.
+
+La estructura de pulsión de muerte, estado neutro y pulsión de vida permite construir una progresión emocional breve: primero se presenta una situación de urgencia o caos, luego se reduce la intensidad visual y finalmente se muestra una solución. De esta forma, el video busca captar la atención sin saturar al usuario y comunicando una idea socialmente útil.
+

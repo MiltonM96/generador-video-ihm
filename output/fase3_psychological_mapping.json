@@ -1,0 +1,35 @@
+{
+    "hook_del_video": "Cuando el entorno se ordena, la atención deja de pelear contra el caos.",
+    "recursos_y_conceptos": [
+        {
+            "recurso": "Imagen inicial de caos o saturación visual",
+            "concepto_psicologico": "Atención selectiva / saliencia visual",
+            "explicacion": "Un estímulo inesperado o de alta intensidad interrumpe el procesamiento automático y orienta involuntariamente la atención hacia él (efecto de novedad y contraste)."
+        },
+        {
+            "recurso": "Transición a una imagen limpia y simple",
+            "concepto_psicologico": "Reducción de carga cognitiva / memoria de trabajo",
+            "explicacion": "Disminuir la densidad visual libera recursos de la memoria de trabajo, facilitando la comprensión del mensaje principal sin agotar al usuario."
+        },
+        {
+            "recurso": "Imagen final de orden o resolución",
+            "concepto_psicologico": "Recompensa inmediata / motivación",
+            "explicacion": "Mostrar una solución concreta activa el sistema de recompensa y genera la sensación de cierre cognitivo, que refuerza la retención del mensaje."
+        },
+        {
+            "recurso": "Formato vertical 9:16 y duración ≤ 12 s",
+            "concepto_psicologico": "Reducción de fricción / jerarquía visual",
+            "explicacion": "El formato vertical ocupa toda la pantalla del dispositivo móvil, eliminando distractores laterales. La duración corta respeta el umbral de atención de usuarios con alta distractibilidad."
+        },
+        {
+            "recurso": "Ausencia de texto en pantalla (primera capa)",
+            "concepto_psicologico": "Carga cognitiva / legibilidad",
+            "explicacion": "Evitar texto en la capa visual base elimina la competencia entre lectura y procesamiento de imagen, reduciendo la sobrecarga de la memoria de trabajo."
+        },
+        {
+            "recurso": "Progresión emocional muerte → neutro → vida",
+            "concepto_psicologico": "Emoción / contraste figura-fondo",
+            "explicacion": "La estructura narrativa de tres momentos produce un arco emocional (tensión → pausa → alivio) que mantiene la atención activa durante toda la duración del video."
+        }
+    ]
+}

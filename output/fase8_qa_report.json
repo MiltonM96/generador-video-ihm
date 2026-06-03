@@ -1,0 +1,64 @@
+{
+    "herramientas_propuestas": [
+        "OpenAI Evals — criterios de evaluación sistemática de contenido",
+        "Azure AI Content Safety — detección de contenido inapropiado"
+    ],
+    "video_evaluado": "output\\video_final.mp4",
+    "video_generado_correctamente": true,
+    "criterios": [
+        {
+            "criterio": "Duración entre 8 y 15 segundos",
+            "resultado": true,
+            "valor_medido": "12 segundos",
+            "observacion": "Cumple el rango solicitado por la consigna."
+        },
+        {
+            "criterio": "Comunica una sola idea principal",
+            "resultado": true,
+            "valor_medido": "Cuando el entorno se ordena, la atención deja de pelear contra el caos.",
+            "observacion": "El hook seleccionado en Fase 2 sintetiza una única idea en una oración breve."
+        },
+        {
+            "criterio": "Sin saturación visual",
+            "resultado": true,
+            "valor_medido": "3 escenas diferenciadas",
+            "observacion": "Cada escena cumple una sola función atencional; la escena 2 actúa como pausa perceptiva intencional."
+        },
+        {
+            "criterio": "Estructura narrativa de tres momentos",
+            "resultado": true,
+            "valor_medido": [
+                "Pulsión de muerte — Hook inicial",
+                "Estado neutro — Desarrollo",
+                "Pulsión de vida — Cierre"
+            ],
+            "observacion": "Pulsión de muerte → Estado neutro → Pulsión de vida."
+        },
+        {
+            "criterio": "Sin texto en pantalla (primera capa)",
+            "resultado": true,
+            "valor_medido": "Texto ausente en capa visual",
+            "observacion": "El texto se incorporará en postproducción para evitar problemas de legibilidad y competencia con la imagen."
+        },
+        {
+            "criterio": "Sin audio integrado (primera capa)",
+            "resultado": true,
+            "valor_medido": "Audio ausente en capa base",
+            "observacion": "La locución se generará con Azure Speech TTS en la capa de postproducción (ver Fase 7)."
+        },
+        {
+            "criterio": "Contenido apropiado y socialmente útil",
+            "resultado": true,
+            "valor_medido": "Temática: organización de la información y TDAH",
+            "observacion": "El video no promueve apuestas, consumo impulsivo ni contenido manipulador."
+        },
+        {
+            "criterio": "Mensaje inicial llama la atención",
+            "resultado": true,
+            "valor_medido": "Escena 1: imagen de caos con alta saliencia visual",
+            "observacion": "El primer clip usa contraste, emoción negativa y novedad para interrumpir el scroll del usuario."
+        }
+    ],
+    "aprobado": true,
+    "observacion_general": "El MVP cumple todos los criterios de la consigna. Las capas de texto, audio y subtítulos se incorporan en postproducción."
+}

@@ -1,0 +1,27 @@
+{
+    "modelo_propuesto": "GPT-4o / modelo de síntesis (simulado en MVP)",
+    "idea_base": "Cuando el entorno se ordena, la atención deja de pelear contra el caos.",
+    "criterio_seleccion": "Se priorizó el hook que combina mayor impacto emocional con la menor carga cognitiva: una sola idea, verbos activos, sin tecnicismos.",
+    "hooks_candidatos": [
+        {
+            "id": 1,
+            "texto": "Cuando el entorno se ordena, la atención deja de pelear contra el caos.",
+            "justificacion": "Combina la idea de conflicto (atención vs. caos) con la resolución (orden) en una sola oración. Alta saliencia emocional y bajo número de palabras."
+        },
+        {
+            "id": 2,
+            "texto": "El caos no es tuyo. Es del entorno que nadie organizó.",
+            "justificacion": "Desplaza la culpa del usuario al entorno externo, generando alivio emocional inmediato y activando la atención por sorpresa."
+        },
+        {
+            "id": 3,
+            "texto": "Menos estímulos. Más foco. Así funciona la atención real.",
+            "justificacion": "Usa ritmo en tres tiempos (menos / más / así), lo que facilita la memorización y el impacto en formatos breves."
+        }
+    ],
+    "hook_seleccionado": {
+        "id": 1,
+        "texto": "Cuando el entorno se ordena, la atención deja de pelear contra el caos.",
+        "justificacion": "Combina la idea de conflicto (atención vs. caos) con la resolución (orden) en una sola oración. Alta saliencia emocional y bajo número de palabras."
+    }
+}

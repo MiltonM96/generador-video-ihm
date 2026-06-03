@@ -1,0 +1,33 @@
+{
+    "modelo_propuesto": "Azure Speech Text-to-Speech HD Voices (es-AR-ElenaNeural)",
+    "justificacion_eleccion": "Las voces HD de Azure Speech ofrecen mayor naturalidad, expresividad y control prosódico que las voces estándar, evitando el efecto robótico que reduce la credibilidad y la retención del mensaje.",
+    "texto_locucion": "Cuando el entorno se ordena, la atención deja de pelear contra el caos.",
+    "duracion_total_video": 12,
+    "segmentos_de_audio": [
+        {
+            "escena": "Pulsión de muerte — Hook inicial",
+            "tiempo": "0–4 s",
+            "texto": "(sin locución — imagen habla sola)",
+            "nota": "La locución se ubica en la escena final para que no compita con el impacto visual inicial."
+        },
+        {
+            "escena": "Estado neutro — Desarrollo",
+            "tiempo": "4–8 s",
+            "texto": "(sin locución — imagen habla sola)",
+            "nota": ""
+        },
+        {
+            "escena": "Pulsión de vida — Cierre",
+            "tiempo": "8–12 s",
+            "texto": "Cuando el entorno se ordena, la atención deja de pelear contra el caos.",
+            "nota": ""
+        }
+    ],
+    "reglas_de_mezcla": [
+        "La voz no debe superponerse con el texto en pantalla.",
+        "El nivel de locución: -12 dBFS; música de fondo: -24 dBFS.",
+        "Fade in de voz: 0.2 s; fade out: 0.3 s al final del clip.",
+        "No agregar música de alta energía — evitar sobrecarga auditiva."
+    ],
+    "estado": "pendiente — locución a generar en Azure Speech Studio"
+}

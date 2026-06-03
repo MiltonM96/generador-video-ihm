@@ -1,0 +1,64 @@
+{
+    "modelo_propuesto_generacion": "gpt-image-1 / DALL-E 3 (referencia estética)",
+    "imagenes_de_referencia": [
+        {
+            "escena": "Pulsión de muerte — Hook inicial",
+            "archivo": "assets/muerte.png",
+            "disponible": true,
+            "prompt_original": "Hyper-realistic close-up of a massive wave of dark murky ocean water filled with crushed plastic bottles and debris. Cinematic lighting, dramatic shadows, 8K. Vertical 9:16, 1080×1920."
+        },
+        {
+            "escena": "Estado neutro — Desarrollo",
+            "archivo": "assets/neutro.png",
+            "disponible": true,
+            "prompt_original": "Cinematic wide shot of a clean minimalist laboratory. Single clear glass tank with pure transparent water. Soft neutral lighting. Serene atmosphere. Vertical 9:16, 1080×1920."
+        },
+        {
+            "escena": "Pulsión de vida — Cierre",
+            "archivo": "assets/vida.png",
+            "disponible": true,
+            "prompt_original": "Inspiring close-up of hands holding a vibrant green plant sprout in a biodegradable pot. Clean sunny beach in the background. Golden hour, warm tones, bokeh, 8K. Vertical 9:16, 1080×1920."
+        }
+    ],
+    "paleta_de_color": {
+        "escena_1_muerte": {
+            "colores": [
+                "#0a0e1a",
+                "#1b2a3b",
+                "#4a6fa5"
+            ],
+            "descripcion": "Azules oscuros y grises profundos — urgencia, amenaza"
+        },
+        "escena_2_neutro": {
+            "colores": [
+                "#f0f4f8",
+                "#d9e2ec",
+                "#9fb3c8"
+            ],
+            "descripcion": "Blancos y grises fríos — calma, transición"
+        },
+        "escena_3_vida": {
+            "colores": [
+                "#2d6a4f",
+                "#74c69d",
+                "#f9a825"
+            ],
+            "descripcion": "Verdes y dorados cálidos — esperanza, renovación"
+        }
+    },
+    "tipografia_sugerida": {
+        "familia": "Inter / Outfit (Google Fonts)",
+        "peso": "Bold 700 para hook principal, Regular 400 para subtítulos",
+        "tamano_base": "72 px en 1080 px de ancho (≈ 6.7% del ancho)",
+        "nota": "El texto no se agrega en esta capa visual; se incorpora en postproducción para evitar errores de legibilidad."
+    },
+    "estilo_visual": {
+        "aspecto": "9:16 vertical",
+        "resolucion": "1080 × 1920 px",
+        "fps": 24,
+        "estilo_cinematografico": "Realista documental, movimiento suave de cámara",
+        "movimiento": "Zoom lento centrípeto (Ken Burns effect) — 10% en duración total",
+        "transiciones": "Fade in/out de 0.25 s en cada corte",
+        "audio": "Sin audio en capa base — locución y música en postproducción"
+    }
+}

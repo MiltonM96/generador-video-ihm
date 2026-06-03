@@ -1,0 +1,23 @@
+{
+    "modelo_utilizado": "Azure Document Intelligence Read API (simulado con PyMuPDF)",
+    "idioma_detectado": "es",
+    "paginas": 1,
+    "tema_central": "La organización de la información como mecanismo para sostener la atención en usuarios con alta distractibilidad (TDAH)",
+    "tres_ideas_importantes": [
+        "El TDAH implica dificultades en la regulación de la atención, la impulsividad y el sostenimiento del esfuerzo, lo cual obliga a diseñar interfaces más claras y directas.",
+        "Un video de alto impacto atencional debe comunicar una sola idea, evitar la sobrecarga cognitiva y usar saliencia visual, contraste y emoción para orientar rápidamente la percepción.",
+        "La producción por fases (extracción → storyboard → composición → QA) permite mayor control, trazabilidad y criterios de calidad explícitos frente al enfoque de prompt único."
+    ],
+    "idea_principal_para_el_video": "Cuando el entorno se ordena, la atención deja de pelear contra el caos.",
+    "palabras_clave": [
+        "TDAH",
+        "atención selectiva",
+        "saliencia visual",
+        "carga cognitiva",
+        "diseño de interfaces",
+        "video atencional",
+        "orden",
+        "contraste"
+    ],
+    "tono_deseado": "urgente pero esperanzador; impacto visual sin saturación"
+}

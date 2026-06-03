@@ -1,0 +1,56 @@
+{
+    "idea_principal": "Cuando el entorno se ordena, la atención deja de pelear contra el caos.",
+    "publico_objetivo": "Usuarios con alta distractibilidad, especialmente personas con TDAH o fatiga cognitiva en entornos digitales.",
+    "tema": "La organización de la información como mecanismo para sostener la atención.",
+    "duracion_total_segundos": 12,
+    "formato": "9:16 vertical — 1080 × 1920 px",
+    "escenas": [
+        {
+            "orden": 1,
+            "nombre": "Pulsión de muerte — Hook inicial",
+            "tiempo": "0–4 s",
+            "descripcion_visual": "Ola oscura de agua contaminada cargada de plástico y residuos. Imagen de urgencia, caos, pérdida de control.",
+            "funcion_ihm": "Captar la atención mediante saliencia visual extrema y emoción negativa. Interrumpir el scroll del usuario.",
+            "conceptos_psicologicos": [
+                "atención selectiva",
+                "saliencia visual",
+                "novedad",
+                "contraste",
+                "emoción negativa"
+            ],
+            "asset_referencia": "assets/muerte.png",
+            "prompt_generacion": "Hyper-realistic close-up of a massive wave of dark murky ocean water filled with crushed plastic bottles and debris. Cinematic lighting, dramatic shadows, 8K. Vertical 9:16, 1080×1920."
+        },
+        {
+            "orden": 2,
+            "nombre": "Estado neutro — Desarrollo",
+            "tiempo": "4–8 s",
+            "descripcion_visual": "Laboratorio limpio y minimalista con un tanque de agua transparente. Luz suave y neutral. Pausa visual.",
+            "funcion_ihm": "Bajar la intensidad perceptiva luego del impacto inicial. Liberar la memoria de trabajo para preparar al usuario para recibir el mensaje final.",
+            "conceptos_psicologicos": [
+                "reducción de carga cognitiva",
+                "memoria de trabajo",
+                "jerarquía visual",
+                "reducción de fricción"
+            ],
+            "asset_referencia": "assets/neutro.png",
+            "prompt_generacion": "Cinematic wide shot of a clean minimalist laboratory. Single clear glass tank with pure transparent water. Soft neutral lighting. Serene atmosphere. Vertical 9:16, 1080×1920."
+        },
+        {
+            "orden": 3,
+            "nombre": "Pulsión de vida — Cierre",
+            "tiempo": "8–12 s",
+            "descripcion_visual": "Manos sosteniendo un brote verde en una maceta biodegradable. Playa limpia de fondo. Luz cálida de atardecer.",
+            "funcion_ihm": "Presentar la solución con emoción positiva. Activar recompensa inmediata y cerrar el arco narrativo con una imagen esperanzadora.",
+            "conceptos_psicologicos": [
+                "motivación",
+                "recompensa inmediata",
+                "emoción positiva",
+                "esperanza",
+                "renovación"
+            ],
+            "asset_referencia": "assets/vida.png",
+            "prompt_generacion": "Inspiring close-up of hands holding a vibrant green plant sprout in a biodegradable pot. Clean sunny beach in the background. Golden hour, warm tones, bokeh, 8K. Vertical 9:16, 1080×1920."
+        }
+    ]
+}
